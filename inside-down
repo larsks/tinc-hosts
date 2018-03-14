@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo removing route for 10.0.0.0/8
+ip route del 10.0.0.0/8 dev $INTERFACE
