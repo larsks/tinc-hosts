@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -d /run/dnsmasq/servers.conf.d ]; then
+cat <<EOF > /run/dnsmasq/servers.conf.d/$NODE
+server=/redhat.com/10.5.30.160
+server=/redhat.com/10.11.5.19
+server=/redhat.com/10.5.30.46
+EOF
+fi
